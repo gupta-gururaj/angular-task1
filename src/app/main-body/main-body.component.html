@@ -1,5 +1,8 @@
-<div>
-    <p style="margin-right: 10px;">Written in main body component</p>
-    <app-section1 style="margin-right: 10px;"></app-section1>
-    <app-section2></app-section2>
+<div id="mainBody-div">
+    <button [ngStyle]="{'height': '25px','margin-top':'12px'}" [ngClass]="{'mr10': true}" (click)="isDisplay=!isDisplay">Toggle</button>
+    <div [ngClass]="{'mr10': true}">
+        <p *ngIf="isDisplay">Written in main body component</p>
+    </div>
+    <app-section-one [ngClass]="{'mr10': true}"></app-section-one>
+    <app-section-two></app-section-two>
 </div>
