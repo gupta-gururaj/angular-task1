@@ -1,9 +1,12 @@
 #footer-div{
     background-color: rgba(99, 185, 242, 0.974);
     text-align: center;
+    display:flex;
+    justify-content: center;
 }
 
-ul{
+#footer-p{
     color: black;
     font-weight: bold;
+    margin-right: 20px;
 }

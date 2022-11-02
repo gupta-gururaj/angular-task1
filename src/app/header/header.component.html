@@ -1,7 +1,6 @@
-<!-- <p>header works!</p> -->
-<div style="display: flex;justify-content: center;">
-    <img src="https://www.bacancytechnology.com/main-boot-5/images/bacancy-logo-white.svg">
-    <button>Button 1</button>
-    <button>Button 2</button>
-    <button>Button 3</button>
+<div id="header-div">
+    <img id="header-img" [src]="img">
+    <div *ngFor="let a of myArray;">
+        <button id="header-button">{{a}}</button>
+    </div>
 </div>

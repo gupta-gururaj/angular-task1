@@ -5,22 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainBodyComponent } from './main-body/main-body.component';
-import { Section1Component } from './section1/section1.component';
-import { Section2Component } from './section2/section2.component';
 import { FooterComponent } from './footer/footer.component';
+import { FormsModule } from '@angular/forms';
+import { SectionOneComponent } from './section-one/section-one.component';
+import { SectionTwoComponent } from './section-two/section-two.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MainBodyComponent,
-    Section1Component,
-    Section2Component,
-    FooterComponent
+    FooterComponent,
+    SectionOneComponent,
+    SectionTwoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
